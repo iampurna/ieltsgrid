@@ -1,7 +1,7 @@
 import { Metadata } from "next";
 import { notFound } from "next/navigation";
-import ReadingTestInterface from "@/components/test/ReadingTestInterface";
 import { getTestSection } from "@/lib/mdx";
+import ReadingResultsInterface from "../../../../components/test/ReadingResultsInterface";
 
 interface Props {
   params: { testId: string; sectionId: string };
@@ -9,25 +9,18 @@ interface Props {
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { testId, sectionId } = params;
-  const section = await getTestSection("reading", testId, sectionId);
-
-  if (!section) {
-    return {
-      title: "Test Not Found | IELTSGrid",
-    };
-  }
 
   return {
-    title: `${section.meta.title} - Section ${section.meta.section} | IELTS Reading Practice`,
-    description: `Practice IELTS Reading with ${section.meta.title}. Questions ${section.meta.questions}, ${section.meta.difficulty} level.`,
+    title: `Test Results - Reading Test ${testId} Section ${sectionId} | IELTSGrid`,
+    description: `View your detailed results and performance analysis for IELTS Reading practice test.`,
     robots: {
-      index: true,
-      follow: true,
+      index: false,
+      follow: false,
     },
   };
 }
 
-export default async function ReadingTestPage({ params }: Props) {
+export default async function ReadingResultsPage({ params }: Props) {
   const { testId, sectionId } = params;
   const section = await getTestSection("reading", testId, sectionId);
 
@@ -36,7 +29,7 @@ export default async function ReadingTestPage({ params }: Props) {
   }
 
   return (
-    <ReadingTestInterface
+    <ReadingResultsInterface
       testId={testId}
       sectionId={sectionId}
       section={section}

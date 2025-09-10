@@ -1,0 +1,10 @@
+{
+  "title": "Academic Reading Test 2",
+  "description": "The History of Chocolate",
+  "difficulty": "beginner",
+  "timeLimit": 60,
+  "sections": 3,
+  "totalQuestions": 9,
+  "topics": ["History", "Food Science", "Culture"],
+  "type": "academic"
+}

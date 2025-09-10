@@ -1,0 +1,10 @@
+{
+  "title": "Listening Test 1",
+  "description": "University Campus Tour",
+  "difficulty": "intermediate",
+  "timeLimit": 30,
+  "sections": 4,
+  "totalQuestions": 40,
+  "topics": ["Education", "Campus Life", "Academic Discussion"],
+  "type": "listening"
+}
