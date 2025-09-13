@@ -412,12 +412,12 @@ export default function SpeakingTipsPage() {
               <Card
                 key={index}
                 className={`p-6 text-center ${
-                  index === 1 ? "border-2 border-green-500 bg-green-50" : ""
+                  index === 2 ? "border-2 border-green-500 bg-green-50" : ""
                 }`}
               >
                 <div
                   className={`text-3xl font-bold mb-2 ${
-                    index === 1 ? "text-green-700" : "text-blue-600"
+                    index === 2 ? "text-green-700" : "text-blue-600"
                   }`}
                 >
                   {band.band}
@@ -426,7 +426,7 @@ export default function SpeakingTipsPage() {
                   {band.description}
                 </h3>
                 <p className="text-sm text-gray-600">{band.characteristics}</p>
-                {index === 1 && (
+                {index === 2 && (
                   <div className="mt-4">
                     <Badge variant="primary">Target Band</Badge>
                   </div>

@@ -110,6 +110,606 @@ const vocabularyTerms = [
     pronunciation: "/ɪnˈklusɪv ˌedʒuˈkeɪʃən/",
     icon: Users,
   },
+  {
+    term: "Pedagogy",
+    definition:
+      "The method and practice of teaching, especially as an academic subject or theoretical concept involving various approaches to instruction and learning.",
+    example:
+      "Modern pedagogy emphasizes student-centered learning rather than traditional teacher-led instruction.",
+    partOfSpeech: "Noun",
+    difficulty: "Advanced",
+    synonyms: [
+      "Teaching methodology",
+      "Educational theory",
+      "Instruction methods",
+    ],
+    pronunciation: "/ˈpedəɡɒdʒi/",
+    icon: Brain,
+  },
+  {
+    term: "Assessment",
+    definition:
+      "The evaluation or estimation of the nature, quality, or ability of someone or something, particularly in educational contexts to measure learning outcomes.",
+    example:
+      "Continuous assessment throughout the semester is more effective than relying solely on final examinations.",
+    partOfSpeech: "Noun",
+    difficulty: "Intermediate",
+    synonyms: ["Evaluation", "Testing", "Appraisal"],
+    pronunciation: "/əˈsɛsmənt/",
+    icon: CheckCircle,
+  },
+  {
+    term: "Numeracy",
+    definition:
+      "The ability to understand and work with numbers, including basic mathematical concepts and problem-solving skills in everyday situations.",
+    example:
+      "Schools should focus equally on literacy and numeracy to prepare students for modern careers.",
+    partOfSpeech: "Noun",
+    difficulty: "Advanced",
+    synonyms: ["Mathematical literacy", "Quantitative skills", "Number skills"],
+    pronunciation: "/ˈnjuːmərəsi/",
+    icon: BookOpen,
+  },
+  {
+    term: "Critical Thinking",
+    definition:
+      "The objective analysis and evaluation of an issue in order to form a judgment, involving logical reasoning and evidence-based conclusions.",
+    example:
+      "Universities should prioritize developing critical thinking skills over memorizing facts.",
+    partOfSpeech: "Noun phrase",
+    difficulty: "Advanced",
+    synonyms: ["Analytical thinking", "Logical reasoning", "Problem-solving"],
+    pronunciation: "/ˈkrɪtɪkəl ˈθɪŋkɪŋ/",
+    icon: Brain,
+  },
+  {
+    term: "Academic Achievement",
+    definition:
+      "The extent to which a student, teacher or institution has achieved their short or long-term educational goals, typically measured by examination results.",
+    example:
+      "Academic achievement alone doesn't guarantee success in life; practical skills are equally important.",
+    partOfSpeech: "Noun phrase",
+    difficulty: "Intermediate",
+    synonyms: [
+      "Educational success",
+      "Academic performance",
+      "Learning outcomes",
+    ],
+    pronunciation: "/ˌækəˈdɛmɪk əˈtʃiːvmənt/",
+    icon: Award,
+  },
+  {
+    term: "Distance Learning",
+    definition:
+      "Education that takes place remotely, typically through online platforms, allowing students to learn from locations other than traditional classrooms.",
+    example:
+      "Distance learning became essential during the pandemic and has revolutionized access to education.",
+    partOfSpeech: "Noun phrase",
+    difficulty: "Intermediate",
+    synonyms: ["Remote learning", "Online education", "E-learning"],
+    pronunciation: "/ˈdɪstəns ˈlɜːrnɪŋ/",
+    icon: BookOpen,
+  },
+  {
+    term: "Educational Equity",
+    definition:
+      "The principle of fairness in education, ensuring all students have access to the resources and opportunities they need to succeed regardless of background.",
+    example:
+      "Achieving educational equity requires addressing socioeconomic disparities that affect student performance.",
+    partOfSpeech: "Noun phrase",
+    difficulty: "Advanced",
+    synonyms: ["Educational fairness", "Equal opportunity", "Academic justice"],
+    pronunciation: "/ˌɛdʒʊˈkeɪʃənəl ˈɛkwɪti/",
+    icon: Users,
+  },
+  {
+    term: "Learning Disabilities",
+    definition:
+      "Neurological disorders that affect the brain's ability to receive, process, store, and respond to information, impacting academic performance.",
+    example:
+      "Students with learning disabilities often require specialized teaching methods and additional support.",
+    partOfSpeech: "Noun phrase",
+    difficulty: "Intermediate",
+    synonyms: [
+      "Learning difficulties",
+      "Learning differences",
+      "Academic challenges",
+    ],
+    pronunciation: "/ˈlɜːrnɪŋ ˌdɪsəˈbɪlɪtiz/",
+    icon: Brain,
+  },
+  {
+    term: "Extracurricular Activities",
+    definition:
+      "Activities pursued in addition to the normal course of study, such as sports, clubs, or volunteer work that contribute to personal development.",
+    example:
+      "Extracurricular activities help students develop leadership skills and explore interests beyond academics.",
+    partOfSpeech: "Noun phrase",
+    difficulty: "Intermediate",
+    synonyms: [
+      "After-school activities",
+      "Co-curricular programs",
+      "Enrichment activities",
+    ],
+    pronunciation: "/ˌɛkstrəkəˈrɪkjələr ækˈtɪvɪtiz/",
+    icon: Users,
+  },
+  {
+    term: "Student Engagement",
+    definition:
+      "The degree of attention, curiosity, interest, and participation that students show when learning, directly impacting academic success.",
+    example:
+      "Interactive teaching methods significantly improve student engagement compared to traditional lectures.",
+    partOfSpeech: "Noun phrase",
+    difficulty: "Advanced",
+    synonyms: [
+      "Academic involvement",
+      "Learning participation",
+      "Student motivation",
+    ],
+    pronunciation: "/ˈstudənt ɪnˈɡeɪdʒmənt/",
+    icon: Users,
+  },
+  {
+    term: "Academic Misconduct",
+    definition:
+      "Dishonest or unethical behavior in academic work, including plagiarism, cheating, or falsifying information in educational settings.",
+    example:
+      "Universities have strict policies against academic misconduct to maintain the integrity of their degrees.",
+    partOfSpeech: "Noun phrase",
+    difficulty: "Advanced",
+    synonyms: [
+      "Academic dishonesty",
+      "Scholastic fraud",
+      "Educational cheating",
+    ],
+    pronunciation: "/ˌækəˈdɛmɪk ˈmɪskɒndʌkt/",
+    icon: CheckCircle,
+  },
+  {
+    term: "Dropout Rate",
+    definition:
+      "The percentage of students who leave school before completing their course of study, often used as an indicator of educational system effectiveness.",
+    example:
+      "High dropout rates in urban schools indicate the need for better support systems for at-risk students.",
+    partOfSpeech: "Noun phrase",
+    difficulty: "Intermediate",
+    synonyms: ["Attrition rate", "School leaving rate", "Educational wastage"],
+    pronunciation: "/ˈdrɒpaʊt reɪt/",
+    icon: Users,
+  },
+  {
+    term: "Educational Technology",
+    definition:
+      "The use of technological tools and resources to facilitate and enhance teaching and learning processes in educational environments.",
+    example:
+      "Educational technology has transformed classrooms, making learning more interactive and accessible.",
+    partOfSpeech: "Noun phrase",
+    difficulty: "Intermediate",
+    synonyms: ["EdTech", "Digital learning tools", "Instructional technology"],
+    pronunciation: "/ˌɛdʒʊˈkeɪʃənəl tɛkˈnɒlədʒi/",
+    icon: BookOpen,
+  },
+  {
+    term: "Competency-Based Learning",
+    definition:
+      "An educational approach that focuses on students mastering specific skills and knowledge rather than spending a set amount of time in class.",
+    example:
+      "Competency-based learning allows students to progress at their own pace once they demonstrate mastery.",
+    partOfSpeech: "Noun phrase",
+    difficulty: "Advanced",
+    synonyms: [
+      "Mastery-based learning",
+      "Outcome-based education",
+      "Skill-based learning",
+    ],
+    pronunciation: "/ˈkɒmpɪtənsi beɪst ˈlɜːrnɪŋ/",
+    icon: Award,
+  },
+  {
+    term: "Learning Outcomes",
+    definition:
+      "Specific statements that describe what students are expected to know, understand, or be able to do as a result of their learning experience.",
+    example:
+      "Clear learning outcomes help teachers design effective lessons and assess student progress accurately.",
+    partOfSpeech: "Noun phrase",
+    difficulty: "Advanced",
+    synonyms: ["Educational objectives", "Learning goals", "Academic targets"],
+    pronunciation: "/ˈlɜːrnɪŋ ˈaʊtkʌmz/",
+    icon: CheckCircle,
+  },
+  {
+    term: "Differentiated Instruction",
+    definition:
+      "A teaching approach that tailors instruction to meet individual students' needs, interests, and learning styles within the same classroom.",
+    example:
+      "Differentiated instruction ensures that both advanced and struggling students receive appropriate challenges.",
+    partOfSpeech: "Noun phrase",
+    difficulty: "Advanced",
+    synonyms: [
+      "Individualized teaching",
+      "Adaptive instruction",
+      "Personalized learning",
+    ],
+    pronunciation: "/ˌdɪfərɛnʃiˌeɪtɪd ɪnˈstrʌkʃən/",
+    icon: Brain,
+  },
+  {
+    term: "Academic Integrity",
+    definition:
+      "The moral code or ethical policy of academia that includes values such as honesty, trust, fairness, and responsibility in scholarly work.",
+    example:
+      "Maintaining academic integrity is crucial for preserving the credibility of educational institutions.",
+    partOfSpeech: "Noun phrase",
+    difficulty: "Advanced",
+    synonyms: ["Scholarly honesty", "Academic ethics", "Educational ethics"],
+    pronunciation: "/ˌækəˈdɛmɪk ɪnˈtɛɡrɪti/",
+    icon: CheckCircle,
+  },
+  {
+    term: "Formative Assessment",
+    definition:
+      "Ongoing evaluations during the learning process that provide feedback to improve teaching and student understanding before final grading.",
+    example:
+      "Formative assessment helps teachers identify learning gaps and adjust their instruction accordingly.",
+    partOfSpeech: "Noun phrase",
+    difficulty: "Advanced",
+    synonyms: [
+      "Ongoing evaluation",
+      "Progress monitoring",
+      "Developmental assessment",
+    ],
+    pronunciation: "/ˈfɔːrmətɪv əˈsɛsmənt/",
+    icon: CheckCircle,
+  },
+  {
+    term: "Summative Assessment",
+    definition:
+      "Evaluation administered at the end of an instructional unit to determine whether learning goals have been achieved, typically for grading purposes.",
+    example:
+      "Final examinations and standardized tests are examples of summative assessment used to measure learning.",
+    partOfSpeech: "Noun phrase",
+    difficulty: "Advanced",
+    synonyms: [
+      "Final evaluation",
+      "Concluding assessment",
+      "End-of-term testing",
+    ],
+    pronunciation: "/ˈsʌmətɪv əˈsɛsmənt/",
+    icon: Award,
+  },
+  {
+    term: "Learning Retention",
+    definition:
+      "The ability to retain and recall information or skills over time, indicating the effectiveness of teaching methods and learning strategies.",
+    example:
+      "Active learning techniques significantly improve learning retention compared to passive lecture-based teaching.",
+    partOfSpeech: "Noun phrase",
+    difficulty: "Advanced",
+    synonyms: [
+      "Knowledge retention",
+      "Information recall",
+      "Memory consolidation",
+    ],
+    pronunciation: "/ˈlɜːrnɪŋ rɪˈtɛnʃən/",
+    icon: Brain,
+  },
+  {
+    term: "Collaborative Learning",
+    definition:
+      "An educational approach where students work together in small groups to achieve shared learning goals and complete tasks collectively.",
+    example:
+      "Collaborative learning develops communication skills while allowing students to learn from each other's perspectives.",
+    partOfSpeech: "Noun phrase",
+    difficulty: "Intermediate",
+    synonyms: [
+      "Group learning",
+      "Cooperative education",
+      "Team-based learning",
+    ],
+    pronunciation: "/kəˈlæbərətɪv ˈlɜːrnɪŋ/",
+    icon: Users,
+  },
+  {
+    term: "Self-Directed Learning",
+    definition:
+      "A process where individuals take initiative and responsibility for their own learning, identifying needs and choosing appropriate strategies.",
+    example:
+      "Self-directed learning skills are essential for success in higher education and professional development.",
+    partOfSpeech: "Noun phrase",
+    difficulty: "Advanced",
+    synonyms: [
+      "Independent learning",
+      "Autonomous learning",
+      "Self-regulated learning",
+    ],
+    pronunciation: "/sɛlf dɪˈrɛktɪd ˈlɜːrnɪŋ/",
+    icon: Brain,
+  },
+  {
+    term: "Educational Psychology",
+    definition:
+      "The study of how people learn in educational settings, including the effectiveness of educational interventions and teaching methods.",
+    example:
+      "Understanding educational psychology helps teachers create more effective learning environments for their students.",
+    partOfSpeech: "Noun phrase",
+    difficulty: "Advanced",
+    synonyms: [
+      "Learning psychology",
+      "Instructional psychology",
+      "Academic psychology",
+    ],
+    pronunciation: "/ˌɛdʒʊˈkeɪʃənəl saɪˈkɒlədʒi/",
+    icon: Brain,
+  },
+  {
+    term: "Blended Learning",
+    definition:
+      "An educational approach that combines online educational materials and opportunities for interaction with traditional classroom methods.",
+    example:
+      "Blended learning offers flexibility while maintaining the benefits of face-to-face instruction.",
+    partOfSpeech: "Noun phrase",
+    difficulty: "Intermediate",
+    synonyms: ["Hybrid learning", "Mixed-mode learning", "Flexible learning"],
+    pronunciation: "/ˈblɛndɪd ˈlɜːrnɪŋ/",
+    icon: BookOpen,
+  },
+  {
+    term: "Academic Excellence",
+    definition:
+      "The demonstrated ability to perform, achieve, and excel in scholastic activities, representing the highest standards of educational achievement.",
+    example:
+      "The university's commitment to academic excellence attracts students from around the world.",
+    partOfSpeech: "Noun phrase",
+    difficulty: "Intermediate",
+    synonyms: [
+      "Educational distinction",
+      "Scholarly achievement",
+      "Academic superiority",
+    ],
+    pronunciation: "/ˌækəˈdɛmɪk ˈɛksələns/",
+    icon: Award,
+  },
+  {
+    term: "Learning Curve",
+    definition:
+      "The rate at which someone learns a new skill or acquires knowledge, often representing the relationship between learning progress and time.",
+    example:
+      "The steep learning curve for advanced mathematics requires dedicated study and practice.",
+    partOfSpeech: "Noun phrase",
+    difficulty: "Intermediate",
+    synonyms: [
+      "Learning progression",
+      "Skill acquisition rate",
+      "Knowledge development",
+    ],
+    pronunciation: "/ˈlɜːrnɪŋ kɜːrv/",
+    icon: Brain,
+  },
+  {
+    term: "Educational Reform",
+    definition:
+      "The planned alteration of educational systems, policies, or practices aimed at improving educational quality, accessibility, or effectiveness.",
+    example:
+      "Educational reform initiatives focus on updating curricula to meet 21st-century skill requirements.",
+    partOfSpeech: "Noun phrase",
+    difficulty: "Advanced",
+    synonyms: [
+      "School reform",
+      "Educational transformation",
+      "System modernization",
+    ],
+    pronunciation: "/ˌɛdʒʊˈkeɪʃənəl rɪˈfɔːrm/",
+    icon: BookOpen,
+  },
+  {
+    term: "Graduate Studies",
+    definition:
+      "Advanced academic programs pursued after completing an undergraduate degree, including master's and doctoral level education.",
+    example:
+      "Graduate studies provide specialized knowledge and research skills necessary for academic or professional careers.",
+    partOfSpeech: "Noun phrase",
+    difficulty: "Intermediate",
+    synonyms: [
+      "Postgraduate education",
+      "Advanced studies",
+      "Higher education",
+    ],
+    pronunciation: "/ˈɡrædʒuət ˈstʌdiz/",
+    icon: GraduationCap,
+  },
+  {
+    term: "Learning Style",
+    definition:
+      "Individual differences in how people prefer to receive, process, and retain information, such as visual, auditory, or kinesthetic learning.",
+    example:
+      "Understanding different learning styles helps teachers adapt their methods to reach all students effectively.",
+    partOfSpeech: "Noun phrase",
+    difficulty: "Intermediate",
+    synonyms: ["Learning preference", "Cognitive style", "Learning modality"],
+    pronunciation: "/ˈlɜːrnɪŋ staɪl/",
+    icon: Brain,
+  },
+  {
+    term: "Educational Institution",
+    definition:
+      "An organization dedicated to providing education, including schools, colleges, universities, and other learning establishments.",
+    example:
+      "Choosing the right educational institution is crucial for achieving your academic and career goals.",
+    partOfSpeech: "Noun phrase",
+    difficulty: "Intermediate",
+    synonyms: [
+      "Academic institution",
+      "Learning establishment",
+      "Educational organization",
+    ],
+    pronunciation: "/ˌɛdʒʊˈkeɪʃənəl ˌɪnstɪˈtuːʃən/",
+    icon: BookOpen,
+  },
+  {
+    term: "Academic Discipline",
+    definition:
+      "A branch of knowledge or field of study with its own particular methods, terminology, and areas of expertise within educational systems.",
+    example:
+      "Psychology is an academic discipline that combines scientific research with practical applications.",
+    partOfSpeech: "Noun phrase",
+    difficulty: "Advanced",
+    synonyms: ["Field of study", "Subject area", "Academic domain"],
+    pronunciation: "/ˌækəˈdɛmɪk ˈdɪsɪplɪn/",
+    icon: BookOpen,
+  },
+  {
+    term: "Intellectual Development",
+    definition:
+      "The growth and enhancement of cognitive abilities, critical thinking skills, and mental capacity through education and experience.",
+    example:
+      "Quality education focuses on intellectual development rather than just memorizing information.",
+    partOfSpeech: "Noun phrase",
+    difficulty: "Advanced",
+    synonyms: ["Cognitive development", "Mental growth", "Intellectual growth"],
+    pronunciation: "/ˌɪntəˈlɛktʃuəl dɪˈvɛləpmənt/",
+    icon: Brain,
+  },
+  {
+    term: "Educational Resources",
+    definition:
+      "Materials, tools, and support systems used to facilitate learning and teaching, including books, technology, and human resources.",
+    example:
+      "Schools in rural areas often lack adequate educational resources compared to urban institutions.",
+    partOfSpeech: "Noun phrase",
+    difficulty: "Intermediate",
+    synonyms: ["Learning materials", "Teaching resources", "Academic tools"],
+    pronunciation: "/ˌɛdʒʊˈkeɪʃənəl rɪˈzɔːrsɪz/",
+    icon: BookOpen,
+  },
+  {
+    term: "School Administration",
+    definition:
+      "The management and organization of educational institutions, including policy implementation, resource allocation, and operational oversight.",
+    example:
+      "Effective school administration is essential for creating a positive learning environment for students.",
+    partOfSpeech: "Noun phrase",
+    difficulty: "Intermediate",
+    synonyms: [
+      "Educational management",
+      "School leadership",
+      "Academic administration",
+    ],
+    pronunciation: "/skuːl ədˌmɪnɪˈstreɪʃən/",
+    icon: Users,
+  },
+  {
+    term: "Learning Environment",
+    definition:
+      "The physical, social, and cultural context in which learning occurs, including classroom settings, resources, and interpersonal dynamics.",
+    example:
+      "A positive learning environment encourages student participation and reduces anxiety about making mistakes.",
+    partOfSpeech: "Noun phrase",
+    difficulty: "Intermediate",
+    synonyms: [
+      "Educational setting",
+      "Academic atmosphere",
+      "Study environment",
+    ],
+    pronunciation: "/ˈlɜːrnɪŋ ɪnˈvaɪrənmənt/",
+    icon: BookOpen,
+  },
+  {
+    term: "Educational Attainment",
+    definition:
+      "The highest level of education completed by an individual, often used as a measure of educational success and socioeconomic status.",
+    example:
+      "Higher educational attainment is strongly correlated with better employment prospects and earning potential.",
+    partOfSpeech: "Noun phrase",
+    difficulty: "Advanced",
+    synonyms: [
+      "Academic achievement",
+      "Educational level",
+      "Scholastic accomplishment",
+    ],
+    pronunciation: "/ˌɛdʒʊˈkeɪʃənəl əˈteɪnmənt/",
+    icon: Award,
+  },
+  {
+    term: "Remedial Education",
+    definition:
+      "Additional instruction designed to help students overcome learning difficulties or knowledge gaps in fundamental academic skills.",
+    example:
+      "Many universities offer remedial education programs to help students meet college-level academic standards.",
+    partOfSpeech: "Noun phrase",
+    difficulty: "Advanced",
+    synonyms: [
+      "Developmental education",
+      "Academic support",
+      "Corrective instruction",
+    ],
+    pronunciation: "/rɪˈmiːdiəl ˌɛdʒʊˈkeɪʃən/",
+    icon: Brain,
+  },
+  {
+    term: "Educational Methodology",
+    definition:
+      "The systematic approach to teaching and learning, including theories, strategies, and techniques used in educational practice.",
+    example:
+      "Modern educational methodology emphasizes interactive and student-centered approaches over traditional lecture formats.",
+    partOfSpeech: "Noun phrase",
+    difficulty: "Advanced",
+    synonyms: [
+      "Teaching approach",
+      "Instructional strategy",
+      "Pedagogical method",
+    ],
+    pronunciation: "/ˌɛdʒʊˈkeɪʃənəl ˌmɛθəˈdɒlədʒi/",
+    icon: Brain,
+  },
+  {
+    term: "Academic Performance",
+    definition:
+      "The extent to which students meet educational goals and demonstrate learning through various measures such as grades and test scores.",
+    example:
+      "Factors affecting academic performance include study habits, motivation, and access to educational resources.",
+    partOfSpeech: "Noun phrase",
+    difficulty: "Intermediate",
+    synonyms: [
+      "Educational achievement",
+      "Scholastic success",
+      "Learning outcomes",
+    ],
+    pronunciation: "/ˌækəˈdɛmɪk pərˈfɔːrməns/",
+    icon: Award,
+  },
+  {
+    term: "Knowledge Transfer",
+    definition:
+      "The process by which learned information, skills, or competencies are applied to new situations or contexts beyond the original learning environment.",
+    example:
+      "Effective education promotes knowledge transfer, enabling students to apply classroom learning to real-world situations.",
+    partOfSpeech: "Noun phrase",
+    difficulty: "Advanced",
+    synonyms: [
+      "Skill application",
+      "Learning application",
+      "Knowledge application",
+    ],
+    pronunciation: "/ˈnɒlɪdʒ ˈtrænsfər/",
+    icon: Brain,
+  },
+  {
+    term: "Educational Funding",
+    definition:
+      "Financial resources allocated to support educational institutions, programs, and student learning, including government budgets and private investment.",
+    example:
+      "Adequate educational funding is crucial for maintaining quality schools and ensuring equal opportunities for all students.",
+    partOfSpeech: "Noun phrase",
+    difficulty: "Intermediate",
+    synonyms: [
+      "School financing",
+      "Educational investment",
+      "Academic funding",
+    ],
+    pronunciation: "/ˌɛdʒʊˈkeɪʃənəl ˈfʌndɪŋ/",
+    icon: BookOpen,
+  },
 ];
 
 const relatedTopics = [
