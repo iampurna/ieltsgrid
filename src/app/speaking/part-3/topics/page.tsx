@@ -9,6 +9,7 @@ import {
   Lightbulb,
   Building,
   Heart,
+  ArrowLeft,
 } from "lucide-react";
 import Card from "@/components/ui/Card";
 import Button from "@/components/ui/Button";
@@ -36,38 +37,8 @@ const discussionCategories = [
     color: "bg-blue-100 text-blue-700",
     description:
       "Questions about social issues, cultural changes, and community life",
-    topics: [
-      {
-        id: "social-media-influence",
-        title: "Social Media & Its Influence",
-        difficulty: "Very Common",
-      },
-      {
-        id: "cultural-preservation",
-        title: "Cultural Heritage & Traditions",
-        difficulty: "Common",
-      },
-      {
-        id: "generational-differences",
-        title: "Generational Changes",
-        difficulty: "Common",
-      },
-      {
-        id: "urbanization",
-        title: "City Life vs Rural Life",
-        difficulty: "Frequent",
-      },
-      {
-        id: "community-relationships",
-        title: "Community & Relationships",
-        difficulty: "Frequent",
-      },
-      {
-        id: "work-life-balance",
-        title: "Work-Life Balance",
-        difficulty: "Common",
-      },
-    ],
+    questionCount: 36,
+    difficulty: "Very Common",
   },
   {
     id: "education-learning",
@@ -76,38 +47,8 @@ const discussionCategories = [
     color: "bg-green-100 text-green-700",
     description:
       "Topics about education systems, learning methods, and knowledge",
-    topics: [
-      {
-        id: "education-systems",
-        title: "Education Systems & Methods",
-        difficulty: "Very Common",
-      },
-      {
-        id: "online-learning",
-        title: "Online vs Traditional Learning",
-        difficulty: "Common",
-      },
-      {
-        id: "importance-of-education",
-        title: "Value of Education",
-        difficulty: "Common",
-      },
-      {
-        id: "skills-development",
-        title: "Skills & Personal Development",
-        difficulty: "Frequent",
-      },
-      {
-        id: "lifelong-learning",
-        title: "Continuous Learning",
-        difficulty: "Frequent",
-      },
-      {
-        id: "creativity-education",
-        title: "Creativity in Education",
-        difficulty: "Frequent",
-      },
-    ],
+    questionCount: 36,
+    difficulty: "Very Common",
   },
   {
     id: "technology-media",
@@ -116,38 +57,8 @@ const discussionCategories = [
     color: "bg-purple-100 text-purple-700",
     description:
       "Questions about technological advancement and digital communication",
-    topics: [
-      {
-        id: "technology-impact",
-        title: "Impact of Technology",
-        difficulty: "Very Common",
-      },
-      {
-        id: "internet-communication",
-        title: "Internet & Communication",
-        difficulty: "Common",
-      },
-      {
-        id: "digital-privacy",
-        title: "Privacy in Digital Age",
-        difficulty: "Common",
-      },
-      {
-        id: "artificial-intelligence",
-        title: "AI & Automation",
-        difficulty: "Frequent",
-      },
-      {
-        id: "traditional-vs-digital",
-        title: "Traditional vs Digital Media",
-        difficulty: "Frequent",
-      },
-      {
-        id: "future-technology",
-        title: "Future of Technology",
-        difficulty: "Frequent",
-      },
-    ],
+    questionCount: 36,
+    difficulty: "Very Common",
   },
   {
     id: "environment-sustainability",
@@ -155,38 +66,8 @@ const discussionCategories = [
     icon: Lightbulb,
     color: "bg-green-100 text-green-700",
     description: "Environmental issues, climate change, and sustainable living",
-    topics: [
-      {
-        id: "climate-change",
-        title: "Climate Change & Global Warming",
-        difficulty: "Very Common",
-      },
-      {
-        id: "environmental-protection",
-        title: "Environmental Conservation",
-        difficulty: "Common",
-      },
-      {
-        id: "sustainable-lifestyle",
-        title: "Sustainable Living",
-        difficulty: "Common",
-      },
-      {
-        id: "pollution-solutions",
-        title: "Pollution & Solutions",
-        difficulty: "Common",
-      },
-      {
-        id: "renewable-energy",
-        title: "Energy & Resources",
-        difficulty: "Frequent",
-      },
-      {
-        id: "urban-planning",
-        title: "Green Cities & Planning",
-        difficulty: "Frequent",
-      },
-    ],
+    questionCount: 36,
+    difficulty: "Common",
   },
   {
     id: "business-economy",
@@ -194,38 +75,8 @@ const discussionCategories = [
     icon: Building,
     color: "bg-orange-100 text-orange-700",
     description: "Economic trends, business practices, and globalization",
-    topics: [
-      {
-        id: "globalization",
-        title: "Globalization & International Trade",
-        difficulty: "Common",
-      },
-      {
-        id: "consumer-behavior",
-        title: "Shopping & Consumer Culture",
-        difficulty: "Common",
-      },
-      {
-        id: "entrepreneurship",
-        title: "Business & Entrepreneurship",
-        difficulty: "Frequent",
-      },
-      {
-        id: "economic-development",
-        title: "Economic Growth & Development",
-        difficulty: "Frequent",
-      },
-      {
-        id: "advertising-influence",
-        title: "Advertising & Marketing",
-        difficulty: "Frequent",
-      },
-      {
-        id: "workplace-changes",
-        title: "Modern Workplace",
-        difficulty: "Frequent",
-      },
-    ],
+    questionCount: 36,
+    difficulty: "Common",
   },
   {
     id: "health-lifestyle",
@@ -233,30 +84,8 @@ const discussionCategories = [
     icon: Heart,
     color: "bg-red-100 text-red-700",
     description: "Health issues, lifestyle choices, and well-being",
-    topics: [
-      { id: "healthy-living", title: "Health & Fitness", difficulty: "Common" },
-      {
-        id: "mental-health",
-        title: "Mental Health & Stress",
-        difficulty: "Common",
-      },
-      { id: "food-nutrition", title: "Diet & Nutrition", difficulty: "Common" },
-      {
-        id: "healthcare-systems",
-        title: "Healthcare & Medicine",
-        difficulty: "Frequent",
-      },
-      {
-        id: "exercise-sports",
-        title: "Sports & Physical Activity",
-        difficulty: "Frequent",
-      },
-      {
-        id: "lifestyle-diseases",
-        title: "Modern Lifestyle Issues",
-        difficulty: "Frequent",
-      },
-    ],
+    questionCount: 36,
+    difficulty: "Common",
   },
 ];
 
@@ -313,6 +142,16 @@ const languageFunctions = [
 export default function Part3TopicsPage() {
   return (
     <div className="min-h-screen bg-gray-50">
+      <div className="bg-white border-b">
+        <div className="container mx-auto px-4 py-4">
+          <Button variant="outline" asChild>
+            <Link href="/speaking" className="flex items-center gap-2">
+              <ArrowLeft className="w-4 h-4" />
+              Back to Speaking
+            </Link>
+          </Button>
+        </div>
+      </div>
       {/* Header */}
       <section className="bg-gradient-to-r from-indigo-600 to-indigo-800 text-white py-12">
         <div className="container mx-auto px-4">
@@ -381,63 +220,71 @@ export default function Part3TopicsPage() {
           </div>
         </section>
 
-        {/* Topic Categories */}
+        {/* Main Topic Categories */}
         <section className="mb-12">
-          <h2 className="text-3xl font-bold text-gray-900 mb-8">
+          <h2 className="text-3xl font-bold text-gray-900 mb-2">
             Discussion Categories
           </h2>
+          <p className="text-gray-600 mb-8">
+            All IELTS Speaking Part 3 topics fall into these six main
+            categories. Practice across all areas!
+          </p>
 
-          <div className="space-y-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
             {discussionCategories.map((category) => {
               const IconComponent = category.icon;
               return (
-                <Card key={category.id} className="p-6">
-                  <div className="flex items-center gap-4 mb-6">
+                <Card
+                  key={category.id}
+                  className="p-6 hover:shadow-lg transition-shadow"
+                >
+                  <div className="flex items-start gap-4">
                     <div className={`p-3 rounded-lg ${category.color}`}>
-                      <IconComponent className="w-8 h-8" />
+                      <IconComponent className="w-6 h-6" />
                     </div>
-                    <div>
-                      <h3 className="text-2xl font-semibold text-gray-900">
-                        {category.title}
-                      </h3>
-                      <p className="text-gray-600">{category.description}</p>
-                    </div>
-                  </div>
-
-                  <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-                    {category.topics.map((topic) => (
-                      <div
-                        key={topic.id}
-                        className="bg-gray-50 p-4 rounded border"
-                      >
-                        <div className="flex items-center justify-between mb-3">
-                          <Badge
-                            variant={
-                              topic.difficulty === "Very Common"
-                                ? "primary"
-                                : topic.difficulty === "Common"
-                                ? "secondary"
-                                : "outline"
-                            }
-                            size="sm"
+                    <div className="flex-1">
+                      <div className="flex items-center gap-2 mb-2">
+                        <h3 className="text-xl font-semibold text-gray-900">
+                          {category.title}
+                        </h3>
+                        <Badge variant="primary" size="sm">
+                          {category.difficulty}
+                        </Badge>
+                      </div>
+                      <p className="text-gray-600 mb-4">
+                        {category.description}
+                      </p>
+                      <div className="flex items-center justify-between">
+                        <span className="text-sm text-gray-500">
+                          {category.questionCount} questions
+                        </span>
+                        <Button asChild size="sm">
+                          <Link
+                            href={`/speaking/part-3/all-questions#${category.id}`}
                           >
-                            {topic.difficulty}
-                          </Badge>
-                        </div>
-                        <h4 className="font-medium text-gray-900 mb-3">
-                          {topic.title}
-                        </h4>
-                        <Button asChild size="sm" className="w-full">
-                          <Link href={`/speaking/part-3/${topic.id}`}>
-                            Practice Questions
+                            View Questions
                           </Link>
                         </Button>
                       </div>
-                    ))}
+                    </div>
                   </div>
                 </Card>
               );
             })}
+          </div>
+
+          {/* Quick Access to All Questions */}
+          <div className="text-center">
+            <Card className="p-4 bg-gray-100">
+              <p className="text-gray-700 mb-4">
+                Looking for all discussion questions in one place?
+              </p>
+              <Button asChild variant="outline">
+                <Link href="/speaking/part-3/all-questions">
+                  View Complete Question Bank (216 Questions)
+                </Link>
+              </Button>
+            </Card>
           </div>
         </section>
 
