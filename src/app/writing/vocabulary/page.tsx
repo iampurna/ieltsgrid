@@ -35,7 +35,7 @@ export const metadata: Metadata = {
 
 const vocabularyCategories = [
   {
-    title: "Task 1 Academic Vocabulary",
+    title: "Task 1 Vocabulary",
     description: "Charts, graphs, maps, and process descriptions",
     icon: BarChart3,
     href: "/writing/vocabulary/task-1",
