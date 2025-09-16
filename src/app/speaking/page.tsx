@@ -2,9 +2,7 @@ import { Metadata } from "next";
 import Link from "next/link";
 import {
   Mic,
-  MessageCircle,
   Clock,
-  Users,
   BookOpen,
   Lightbulb,
   Target,
@@ -210,8 +208,9 @@ export default function SpeakingPage() {
               >
                 <div className={`h-2 bg-gradient-to-r ${part.color}`}></div>
                 <div className="p-8">
-                  <div className="grid grid-cols-1 lg:grid-cols-4 gap-8">
-                    <div className="lg:col-span-3">
+                  <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                    {/* Content Section */}
+                    <div className="lg:col-span-2">
                       <div className="flex items-center gap-4 mb-6">
                         <Badge
                           variant="primary"
@@ -282,20 +281,29 @@ export default function SpeakingPage() {
                       </div>
                     </div>
 
-                    <div className="flex flex-col gap-4 lg:justify-center">
-                      <Button asChild size="lg" className="w-full">
-                        <Link href={part.practiceLink}>
-                          Start Part {part.part}
-                        </Link>
-                      </Button>
-                      <Button
-                        asChild
-                        variant="outline"
-                        size="lg"
-                        className="w-full"
-                      >
-                        <Link href={part.topicsLink}>Browse All Topics</Link>
-                      </Button>
+                    {/* Buttons Section - Fixed Layout */}
+                    <div className="lg:col-span-1">
+                      <div className="flex flex-col gap-4 lg:justify-start lg:items-stretch h-full lg:pt-0 pt-6">
+                        <div className="space-y-4">
+                          <Link href={part.practiceLink} className="block">
+                            <Button
+                              size="lg"
+                              className="w-full cursor-pointer hover:bg-blue-700 transition-colors"
+                            >
+                              Start Part {part.part}
+                            </Button>
+                          </Link>
+                          <Link href={part.topicsLink} className="block">
+                            <Button
+                              variant="outline"
+                              size="lg"
+                              className="w-full cursor-pointer hover:bg-gray-50 transition-colors"
+                            >
+                              Browse All Topics
+                            </Button>
+                          </Link>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
