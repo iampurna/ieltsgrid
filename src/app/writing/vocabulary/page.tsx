@@ -1,3 +1,4 @@
+"use client";
 import { Metadata } from "next";
 import Link from "next/link";
 import {
@@ -18,20 +19,6 @@ import Card from "@/components/ui/Card";
 import Button from "@/components/ui/Button";
 import Badge from "@/components/ui/Badge";
 import AdInContent from "@/components/ads/AdInContent";
-
-export const metadata: Metadata = {
-  title: "IELTS Writing Vocabulary | Task 1 & Task 2 | Band 8+ Words",
-  description:
-    "Master IELTS Writing vocabulary for both Task 1 and Task 2. Essential words, phrases, and expressions for Band 8+ scores in Academic and General Training.",
-  keywords: [
-    "IELTS Writing Vocabulary",
-    "IELTS Band 8 Vocabulary",
-    "Academic Writing Words",
-    "Task 1 Vocabulary",
-    "Task 2 Vocabulary",
-    "IELTS Word List",
-  ],
-};
 
 const vocabularyCategories = [
   {
@@ -220,7 +207,6 @@ export default function VocabularyPage() {
                 <p className="text-gray-600 mb-6 text-lg">
                   {category.description}
                 </p>
-
                 <div className="flex justify-center gap-4 mb-6">
                   <Badge variant="outline" className="text-sm">
                     {category.wordCount} Words
@@ -229,7 +215,6 @@ export default function VocabularyPage() {
                     {category.difficulty}
                   </Badge>
                 </div>
-
                 <div className="mb-6">
                   <h4 className="font-semibold text-gray-900 mb-3">
                     What You'll Learn:
@@ -246,10 +231,15 @@ export default function VocabularyPage() {
                     ))}
                   </ul>
                 </div>
-
-                <Button asChild className="w-full text-lg py-3">
+                {/* <Button asChild className="w-full text-lg py-3">
                   <Link href={category.href}>Start Learning</Link>
-                </Button>
+                </Button> */}
+                <Link
+                  href={category.href}
+                  className="inline-block w-full bg-blue-600 hover:bg-blue-700 text-white font-medium text-lg py-3 px-6 rounded-lg text-center transition-colors duration-200 shadow-sm hover:shadow-md"
+                >
+                  Start Learning
+                </Link>
               </Card>
             ))}
           </div>
